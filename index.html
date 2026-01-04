@@ -11,6 +11,13 @@
 
   gtag('config', 'G-Y0BFWM4B03');
 </script>
+<script>
+// Tüm URL parametrelerini kaldır
+if(window.location.search) {
+    const newUrl = window.location.origin + window.location.pathname;
+    window.history.replaceState(null, '', newUrl);
+}
+</script>
 <title>Anatomi Quiz Pro</title>
 <style>
   body { font-family: Arial, sans-serif; background:#f0f0f0; padding:20px; margin:0; }
@@ -309,4 +316,5 @@ let k=typeof globalThis!=='undefined'?globalThis:typeof window!=='undefined'?win
 </script>
 </body>
 </html>
+
 
